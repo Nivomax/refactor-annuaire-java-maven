@@ -12,7 +12,8 @@ Exercice de refactorisation d'une application Java/Maven vers une architecture m
 ## Lancement
 ```powershell
 mvn clean test
-mvn exec:java -Dexec.mainClass=org.example.Main
+mvn clean package
+java -cp target/classes org.example.Main
 ```
 
 ## Point d'entrée
